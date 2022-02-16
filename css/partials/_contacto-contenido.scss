@@ -1,0 +1,50 @@
+/* 
+****************************************
+****************************************
+INICIO CONTACTO
+**************************************** 
+****************************************
+*/
+.formContenedor {
+  @extend .section-wrapper;
+  margin: 0 auto;
+  @include flexbox-column-display($align-items: center);
+}
+
+.form-contacto {
+  @include flexbox-column-display;
+  gap: 1.5rem;
+}
+
+.form-check-inline {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.formBotones {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  button {
+    font-size: 1rem;
+    padding: 0.2rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/* Inicio Media Queries Contacto */
+
+@media screen and (min-width: 768px) {
+  .form-check-inline {
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+}
+
+/* 
+****************************************
+FIN CONTACTO
+**************************************** 
+*/

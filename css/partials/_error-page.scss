@@ -1,0 +1,30 @@
+.error-section {
+  @include flexbox-column-display($align-items: center);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../Multimedia/foto_santi1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  &-titulo {
+    font-size: 8rem;
+    font-weight: 600;
+  }
+
+  &-mensaje {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  &__boton {
+    background-color: $tituloprincipal;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+  }
+
+  &__home-link {
+    color: $texto;
+    font-weight: 600;
+  }
+}

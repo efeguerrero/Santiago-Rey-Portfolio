@@ -1,0 +1,243 @@
+/***************************************
+INICIO HOME
+***************************************/
+
+/* Inicio Header */
+
+.mainHeader {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../Multimedia/foto_santi1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 3rem;
+}
+
+/* Fin Header */
+
+/* Inicio Banner */
+
+.main-banner {
+  @include flexbox-column-display($align-items: center);
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__texto {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0 auto;
+
+    &-container {
+      @include flexbox-column-display($align-items: center);
+      padding-bottom: 2rem;
+    }
+
+    &-separador {
+      display: none;
+    }
+  }
+}
+
+/* Fin Banner */
+
+/* Inicio Sección Bio */
+
+.bio-introduccion {
+  &__descripcion {
+    margin: 2rem 0;
+    text-align: justify;
+    line-height: 1.4rem;
+  }
+
+  &__septimo-link {
+    color: $tituloprincipal;
+    &:hover {
+      color: $tituloprincipal;
+    }
+  }
+
+  &__img-container {
+    text-align: center;
+  }
+
+  &__img {
+    width: 90%;
+  }
+
+  &__redes {
+    @include flexbox-column-display($flex-direction: row, $align-items: center);
+    gap: 2rem;
+    margin: 3rem 0;
+
+    &-link {
+      width: 2rem;
+    }
+    &-img {
+      width: 100%;
+    }
+  }
+}
+/* Fin Sección Bio */
+
+/* Inicio Formato Sección Servicios */
+
+.section-servicios {
+  @include flexbox-column-display;
+  gap: 1rem;
+}
+
+.servicio-individual {
+  padding: 2rem 2rem;
+  width: 100%;
+  text-align: center;
+  background-color: $fondocontraste;
+  transition: all 0.5s;
+  border-radius: 15px;
+  @include flexbox-column-display(
+    $align-items: center,
+    $justify-content: space-around
+  );
+  gap: 1rem;
+
+  &__titulo {
+    color: $texto;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__texto {
+    line-height: 2rem;
+  }
+}
+
+/* Fin de Formato Sección Servicios */
+
+/* Inicio formato Sección Música */
+
+.section-musica {
+  width: 100%;
+  @include flexbox-column-display;
+
+  &__reproductores {
+    @include flexbox-column-display($align-items: center);
+    gap: 2rem;
+    width: 100%;
+  }
+}
+
+/* Fin formato Sección Música */
+
+/* ************************************** 
+INICIO MEDIA QUERIES HOME 
+************************************** */
+
+@media screen and (min-width: 768px) {
+  /* Inicio Responsive Header*/
+  .main-banner {
+    height: 50vh;
+
+    &__texto {
+      &-container {
+        @include flexbox-column-display($flex-direction: row);
+        padding-bottom: 2rem;
+      }
+
+      &-separador {
+        display: inline;
+        margin: 0 0.5rem;
+      }
+    }
+  }
+  .mainHeader {
+    padding-top: 0rem;
+  }
+
+  /* Fin Responsive Header*/
+}
+
+@media screen and (min-width: 1024px) {
+  /* Inicio Responsive Header*/
+
+  .mainHeader {
+    background-attachment: fixed;
+  }
+
+  .main-banner {
+    height: 90vh;
+    &__title {
+      font-size: 3.9rem;
+    }
+    &__texto {
+      font-size: 1.3rem;
+    }
+  }
+  /* Fin Responsive Header */
+
+  /*Inicio Responsive bio*/
+
+  .bio-introduccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+
+    &__img-container {
+      width: 40%;
+    }
+
+    &__img {
+      width: 100%;
+      order: 1;
+    }
+
+    &__info {
+      order: 2;
+      width: 60%;
+    }
+
+    &__descripcion {
+      text-align: left;
+      line-height: 1.5rem;
+      margin: 0;
+    }
+  }
+  /*Fin Responsive Bio*/
+
+  /* Inicio Responsive section Servicios Home */
+  .section-servicios {
+    flex-direction: row;
+  }
+
+  .servicio-individual {
+    width: 33%;
+  }
+  /* Fin Responsive section Servicios Home */
+
+  /* Inicio Responsive section Musica Home */
+
+  .section-musica__reproductores {
+    flex-direction: row;
+  }
+
+  /* Fin Responsive section Musica Home */
+}
+/* ************************************** 
+FIN MEDIA QUERIES HOME
+************************************** */
+
+/***************************************
+FIN HOME
+***************************************/

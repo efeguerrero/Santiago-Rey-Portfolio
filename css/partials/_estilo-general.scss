@@ -1,0 +1,70 @@
+/*********************
+Inicio Estilo General
+*********************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: normal;
+}
+
+body {
+  background-color: $fondo;
+  color: $texto;
+}
+
+.section-wrapper {
+  margin: 5rem auto;
+  width: 80vw;
+  max-width: 1440px;
+}
+
+h1 {
+  color: $tituloprincipal;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 80vw;
+}
+
+h2 {
+  font-weight: 500;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin: 1.5rem auto;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  max-width: 90vw;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.maxLayout {
+  max-width: 1440px;
+}
+
+/*********************
+Fin Estilo General
+*********************/

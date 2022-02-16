@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Inicio Boostrap 4.6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <!-- Fin Boostrap 4.6 -->
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- CSS Personalizado -->
+    <title>Santiago Rey | Contacto</title>
+    <!-- Inicio Meta Tags -->
+
+    <meta name="description" content="Formulario de contacto | Santiago Rey" />
+    <meta
+      name="keywords"
+      content="música, producción, musical,productor,músico,grabación,edición,mezcla,guitarrista,contacto"
+    />
+  </head>
+  <meta name="author" content="Francisco Guerrero" />
+  <meta name="language" content="Spanish" />
+  <meta name="distribution" content="Global" />
+  <meta name="country" content="Argentina" />
+  <!-- Fin Meta Tags -->
+  <body>
+    <!-- BS Nav Bar -->
+    <nav class="navbar fixed-top navbar-expand-md justify-content-end">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-md-center"
+        id="navbarNavAltMarkup"
+      >
+        <div class="navbar-nav text-center">
+          <div class="navbar-nav__links">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="trabajos.html">Trabajos</a>
+            <a class="nav-link" href="galeria.html">Galeria</a>
+            <a class="nav-link" href="mibanda.html">Mi Banda</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </div>
+          <!-- Inicio Redes NavBar -->
+          <article class="navbar__section-redes">
+            <a
+              class="navbar__link-redes"
+              href="https://www.facebook.com/santiago.reypardellas"
+              target="_blank"
+              ><img
+                class="navbar__img-redes"
+                src="../Multimedia/logosRedes/facebook.png"
+                alt="Facebook Link"
+            /></a>
+            <a
+              class="navbar__link-redes"
+              href="https://www.youtube.com/user/SantiagoReyP"
+              target="_blank"
+              ><img
+                src="../Multimedia/logosRedes/youtube.png"
+                class="navbar__img-redes"
+                alt="Youtube Link"
+            /></a>
+            <a
+              class="navbar__link-redes"
+              href="https://www.instagram.com/santireyp"
+              target="_blank"
+              ><img
+                src="../Multimedia/logosRedes/instragram.png"
+                class="navbar__img-redes"
+                alt="Instagram Link"
+            /></a>
+            <a
+              href="https://open.spotify.com/artist/3KOg62Nw63sN1i9wZUu5tU?si=KrCHoSD6TFCXsFM1sSdMoQ"
+              class="navbar__link-redes"
+              target="_blank"
+              ><img
+                src="../Multimedia/logosRedes/spotify.png"
+                class="navbar__img-redes"
+                alt="Spotify Link"
+            /></a>
+          </article>
+          <!-- Fin Redes NavBar -->
+        </div>
+      </div>
+    </nav>
+    <!-- BS Nav Bar -->
+    <div class="section-wrapper maxLayout">
+      <h1>Contacto</h1>
+      <!-- Inicio Formulario de Contacto -->
+      <div class="formContenedor">
+        <form class="form-contacto" action="">
+          <div class="row">
+            <div class="col">
+              <input
+                class="form-control"
+                type="text"
+                name="nombre"
+                placeholder="Nombre"
+                id="nombre"
+              />
+            </div>
+            <div class="col">
+              <input
+                class="form-control"
+                type="text"
+                name="apellido"
+                placeholder="Apellido"
+                id="apellido"
+              />
+            </div>
+          </div>
+          <div class="">
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              placeholder="prueba@hotmail.com"
+              id="email"
+            />
+          </div>
+
+          <select class="custom-select">
+            <option selected>Seleccionar Formato</option>
+            <option value="1">Solista</option>
+            <option value="2">Duo</option>
+            <option value="3">Banda</option>
+          </select>
+
+          <div class="formularioCheck">
+            <label for="instrumentos">Instrumentos:</label>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="instrumentos"
+                id="Guitarra"
+                value="Guitarra"
+              />
+              <label class="form-check-label" for="Guitarra">Guitarra</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="instrumentos"
+                id="Bateria"
+                value="Bateria"
+              />
+              <label class="form-check-label" for="Bateria">Bateria</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="instrumentos"
+                id="Bajo"
+                value="Bajo"
+              />
+              <label class="form-check-label" for="Bajo">Bajo</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="instrumentos"
+                id="Teclado"
+                value="Teclado"
+              />
+              <label class="form-check-label" for="Teclado">Teclado</label>
+            </div>
+          </div>
+          <textarea
+            class="form-control"
+            name="mensaje"
+            placeholder="Mensaje..."
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="formBotones">
+            <button class="btn btn-light" type="submit">Enviar</button>
+            <button class="btn btn-light" type="reset">Borrar</button>
+          </div>
+        </form>
+      </div>
+      <!-- Fin Formulario de Contacto -->
+    </div>
+    <!-- Inicio de Footer // BEM -->
+    <footer class="footer">
+      <article class="footer__section-texto">
+        <p class="footer__texto">
+          Todos los derechos reservados Santiago Rey Pardellas
+        </p>
+      </article>
+      <article class="footer__section-redes">
+        <a
+          class="footer__link-redes"
+          href="https://www.facebook.com/santiago.reypardellas"
+          target="_blank"
+          ><img
+            class="footer__img-redes"
+            src="../Multimedia/logosRedes/facebook.png"
+            alt="Facebook Link"
+        /></a>
+        <a
+          class="footer__link-redes"
+          href="https://www.youtube.com/user/SantiagoReyP"
+          target="_blank"
+          ><img
+            src="../Multimedia/logosRedes/youtube.png"
+            class="footer__img-redes"
+            alt="Youtube Link"
+        /></a>
+        <a
+          class="footer__link-redes"
+          href="https://www.instagram.com/santireyp"
+          target="_blank"
+          ><img
+            src="../Multimedia/logosRedes/instragram.png"
+            class="footer__img-redes"
+            alt="Instagram Link"
+        /></a>
+        <a
+          href="https://open.spotify.com/artist/3KOg62Nw63sN1i9wZUu5tU?si=KrCHoSD6TFCXsFM1sSdMoQ"
+          class="footer__link-redes"
+          target="_blank"
+          ><img
+            src="../Multimedia/logosRedes/spotify.png"
+            class="footer__img-redes"
+            alt="Spotify Link"
+        /></a>
+      </article>
+    </footer>
+    <!-- Fin de Footer -->
+    <!-- Inicio Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Inicio Boostrap JS -->
+  </body>
+</html>

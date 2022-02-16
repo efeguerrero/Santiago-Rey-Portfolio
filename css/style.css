@@ -1,0 +1,831 @@
+@charset "UTF-8";
+/**************************
+ Inicio Variables Globales
+***************************/
+/*Inicio Paleta de Colores*/
+/* Fin Paleta de Colores*/
+/* Inicio Fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600&display=swap");
+/* Fin Fuentes */
+/*Definición de Mixins*/
+/**************************
+Fin Variables Globales
+***************************/
+/*********************
+Inicio Estilo General
+*********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: normal;
+}
+
+body {
+  background-color: #000000;
+  color: #efe9f4;
+}
+
+.section-wrapper, .formContenedor {
+  margin: 5rem auto;
+  width: 80vw;
+  max-width: 1440px;
+}
+
+h1 {
+  color: #ff3366;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 80vw;
+}
+
+h2 {
+  font-weight: 500;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin: 1.5rem auto;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  max-width: 90vw;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.maxLayout {
+  max-width: 1440px;
+}
+
+/*********************
+Fin Estilo General
+*********************/
+/*********************
+Inicio Estilo Nav BS
+ ********************/
+.navbar {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0.25rem 10vw;
+  background-color: black;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: black;
+  height: calc(100vh - 3.125rem);
+}
+
+.navbar-nav a {
+  color: white;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  border-bottom: transparent 1px solid;
+  text-transform: uppercase;
+}
+
+.navbar-nav a:hover {
+  color: white;
+}
+
+.navbar-toggler {
+  padding-right: 0;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../Multimedia/menuHamburguesa.png);
+  width: 1.75em;
+  height: 2.25em;
+}
+
+/*Inicio Navbar Sección Redes para Mobile*/
+.navbar__section-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar__link-redes {
+  width: 1.5rem;
+}
+
+.navbar__img-redes {
+  width: 100%;
+}
+
+/*Fin Navbar Sección Redes para Mobile*/
+/* Inicio Media Queries Nav Bar */
+@media screen and (min-width: 768px) {
+  .navbar,
+  .navbar-nav {
+    background-color: transparent;
+  }
+  .navbar {
+    height: 10vh;
+  }
+  .navbar-nav {
+    height: auto;
+  }
+  .navbar-nav a {
+    font-size: 0.8rem;
+    color: #f9c846;
+  }
+  .navbar-nav a:hover {
+    border-bottom: white 1px solid;
+  }
+  .navbar-nav__links {
+    display: flex;
+  }
+  .fixed-top {
+    position: static;
+    top: auto;
+    right: auto;
+    left: auto;
+    z-index: auto;
+  }
+  .navbar__section-redes {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-nav__links {
+    gap: 2rem;
+  }
+}
+
+/* Fin Media Queries Nav Bar */
+/*********************
+Fin Estilo Nav BS
+ ********************/
+/*********************
+Inicio Estilo Footer
+*********************/
+.footer {
+  background-color: #1d2120;
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer__section-texto {
+  text-align: center;
+  max-width: 670px;
+}
+
+.footer__section-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  max-width: 670px;
+}
+
+.footer__link-redes {
+  width: 1.5rem;
+}
+
+.footer__img-redes {
+  width: 100%;
+}
+
+/* Inicio Media Queries Footer */
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+  }
+  .footer__section-redes {
+    width: 30%;
+    gap: 2rem;
+  }
+  .footer__link-redes {
+    width: 2rem;
+  }
+}
+
+/* Fin Media Queries Footer */
+/*********************
+Fin Estilo Footer
+*********************/
+/***************************************
+INICIO HOME
+***************************************/
+/* Inicio Header */
+.mainHeader {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Multimedia/foto_santi1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 3rem;
+}
+
+/* Fin Header */
+/* Inicio Banner */
+.main-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-banner__title {
+  font-size: 2rem;
+}
+
+.main-banner__texto {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-banner__texto-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.main-banner__texto-separador {
+  display: none;
+}
+
+/* Fin Banner */
+/* Inicio Sección Bio */
+.bio-introduccion__descripcion {
+  margin: 2rem 0;
+  text-align: justify;
+  line-height: 1.4rem;
+}
+
+.bio-introduccion__septimo-link {
+  color: #ff3366;
+}
+
+.bio-introduccion__septimo-link:hover {
+  color: #ff3366;
+}
+
+.bio-introduccion__img-container {
+  text-align: center;
+}
+
+.bio-introduccion__img {
+  width: 90%;
+}
+
+.bio-introduccion__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.bio-introduccion__redes-link {
+  width: 2rem;
+}
+
+.bio-introduccion__redes-img {
+  width: 100%;
+}
+
+/* Fin Sección Bio */
+/* Inicio Formato Sección Servicios */
+.section-servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.servicio-individual {
+  padding: 2rem 2rem;
+  width: 100%;
+  text-align: center;
+  background-color: #1d2120;
+  transition: all 0.5s;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.servicio-individual__titulo {
+  color: #efe9f4;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.servicio-individual:hover {
+  transform: scale(1.05);
+}
+
+.servicio-individual__texto {
+  line-height: 2rem;
+}
+
+/* Fin de Formato Sección Servicios */
+/* Inicio formato Sección Música */
+.section-musica {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.section-musica__reproductores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Fin formato Sección Música */
+/* ************************************** 
+INICIO MEDIA QUERIES HOME 
+************************************** */
+@media screen and (min-width: 768px) {
+  /* Inicio Responsive Header*/
+  .main-banner {
+    height: 50vh;
+  }
+  .main-banner__texto-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    padding-bottom: 2rem;
+  }
+  .main-banner__texto-separador {
+    display: inline;
+    margin: 0 0.5rem;
+  }
+  .mainHeader {
+    padding-top: 0rem;
+  }
+  /* Fin Responsive Header*/
+}
+
+@media screen and (min-width: 1024px) {
+  /* Inicio Responsive Header*/
+  .mainHeader {
+    background-attachment: fixed;
+  }
+  .main-banner {
+    height: 90vh;
+  }
+  .main-banner__title {
+    font-size: 3.9rem;
+  }
+  .main-banner__texto {
+    font-size: 1.3rem;
+  }
+  /* Fin Responsive Header */
+  /*Inicio Responsive bio*/
+  .bio-introduccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .bio-introduccion__img-container {
+    width: 40%;
+  }
+  .bio-introduccion__img {
+    width: 100%;
+    order: 1;
+  }
+  .bio-introduccion__info {
+    order: 2;
+    width: 60%;
+  }
+  .bio-introduccion__descripcion {
+    text-align: left;
+    line-height: 1.5rem;
+    margin: 0;
+  }
+  /*Fin Responsive Bio*/
+  /* Inicio Responsive section Servicios Home */
+  .section-servicios {
+    flex-direction: row;
+  }
+  .servicio-individual {
+    width: 33%;
+  }
+  /* Fin Responsive section Servicios Home */
+  /* Inicio Responsive section Musica Home */
+  .section-musica__reproductores {
+    flex-direction: row;
+  }
+  /* Fin Responsive section Musica Home */
+}
+
+/* ************************************** 
+FIN MEDIA QUERIES HOME
+************************************** */
+/***************************************
+FIN HOME
+***************************************/
+/* 
+****************************************
+****************************************
+INICIO TRABAJOS
+**************************************** 
+****************************************
+*/
+.section-trabajos__trabajo-individual {
+  margin: 3rem 0;
+}
+
+.trabajo-individual {
+  background-color: #222725;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 2rem 2rem;
+  gap: 1rem;
+}
+
+.trabajo-individual__main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 1rem;
+}
+
+.trabajo-individual__descripcion {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.trabajo-individual__titulo {
+  font-size: 2rem;
+  margin: 0 0;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+  text-align: left;
+}
+
+.trabajo-individual__section-fotos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  grid-gap: 0.5rem;
+}
+
+.trabajo-individual__foto {
+  width: 100%;
+}
+
+/* ************************************** 
+INICIO MEDIA QUERIES TRABAJOS
+************************************** */
+@media screen and (min-width: 1024px) {
+  .trabajo-individual__main-info {
+    flex-direction: row;
+  }
+  .trabajo-individual__player {
+    width: 40%;
+    margin-bottom: 2rem;
+  }
+  .trabajo-individual__descripcion {
+    width: 60%;
+    text-align: Left;
+  }
+}
+
+/* ************************************** 
+FIN MEDIA QUERIES TRABAJOS
+************************************** */
+/* 
+****************************************
+****************************************
+FIN TRABAJOS
+**************************************** 
+****************************************
+*/
+/* 
+****************************************
+****************************************
+INICIO GALERIA
+****************************************
+**************************************** 
+*/
+.galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.galeria__img {
+  width: 100%;
+}
+
+/* ************************************** 
+INICIO MEDIA QUERIES GALERIA
+************************************** */
+@media screen and (min-width: 768px) {
+  .galeria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .galeria__img {
+    width: calc(50% - 1rem);
+    transition: all 0.2s;
+  }
+  .galeria__img:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    grid-gap: 1rem;
+  }
+  .galeria__img {
+    width: 100%;
+  }
+  .galeria__img--destacada1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .galeria__img--destacada2 {
+    grid-column: 2/4;
+    grid-row: 3/5;
+  }
+  .galeria__img--destacada3 {
+    grid-column: 4/6;
+    grid-row: 1/3;
+  }
+}
+
+/* ************************************** 
+FIN MEDIA QUERIES GALERIA
+************************************** */
+/* 
+****************************************
+****************************************
+FIN GALERIA
+**************************************** 
+****************************************
+*/
+/* 
+****************************************
+****************************************
+INICIO MI BANDA
+****************************************
+**************************************** 
+*/
+.banda-introduccion__descripcion {
+  margin: 2rem 0;
+  text-align: justify;
+  line-height: 1.4rem;
+}
+
+.banda-introduccion__img-container {
+  text-align: center;
+}
+
+.banda-introduccion__img {
+  width: 90%;
+}
+
+.banda-introduccion__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.banda-introduccion__redes-link {
+  width: 2.5rem;
+}
+
+.banda-introduccion__redes-img {
+  width: 100%;
+}
+
+/*Inicio Carousel*/
+.banda-fotos {
+  width: 80vw;
+  margin: 2rem auto;
+  margin-bottom: 4rem;
+}
+
+.carousel-inner img {
+  width: 100%;
+}
+
+.carousel-indicators li {
+  height: 10px;
+  width: 10px;
+  background-color: #efe9f4;
+}
+
+/*Fin Carousel*/
+/* ****************************************
+INICIO MEDIA QUERIES "MI BANDA"
+****************************************  */
+@media screen and (min-width: 768px) {
+  .banner-banda {
+    height: 50vh;
+    margin: 1rem 0;
+    background-image: url(../Multimedia/foto_santi10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banda-introduccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .banda-introduccion__img-container {
+    width: 25%;
+  }
+  .banda-introduccion__img {
+    width: 100%;
+    order: 1;
+  }
+  .banda-introduccion__info {
+    order: 2;
+    width: 75%;
+  }
+  .banda-introduccion__descripcion {
+    text-align: left;
+    line-height: 1.5rem;
+    margin: 0;
+  }
+  .section-musica {
+    flex-direction: row;
+  }
+  .banda-fotos {
+    width: 50vw;
+  }
+}
+
+/* ****************************************
+FIN MEDIA QUERIES "MI BANDA"
+****************************************  */
+/* 
+****************************************
+****************************************
+FIN MI BANDA
+**************************************** 
+****************************************
+*/
+/* 
+****************************************
+****************************************
+INICIO CONTACTO
+**************************************** 
+****************************************
+*/
+.formContenedor {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.form-check-inline {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.formBotones {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.formBotones button {
+  font-size: 1rem;
+  padding: 0.2rem 2rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Inicio Media Queries Contacto */
+@media screen and (min-width: 768px) {
+  .form-check-inline {
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+}
+
+/* 
+****************************************
+FIN CONTACTO
+**************************************** 
+*/
+.error-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Multimedia/foto_santi1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.error-section-titulo {
+  font-size: 8rem;
+  font-weight: 600;
+}
+
+.error-section-mensaje {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.error-section__boton {
+  background-color: #ff3366;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+}
+
+.error-section__home-link {
+  color: #efe9f4;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
