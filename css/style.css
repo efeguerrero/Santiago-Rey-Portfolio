@@ -118,7 +118,7 @@ Inicio Estilo Nav BS
 }
 
 .navbar-toggler-icon {
-  background-image: url(../Multimedia/menuHamburguesa.png);
+  background-image: url(../Multimedia/menuicon.svg);
   width: 1.75em;
   height: 2.25em;
 }
@@ -133,11 +133,12 @@ Inicio Estilo Nav BS
 }
 
 .navbar__link-redes {
-  width: 1.5rem;
+  width: 2.5rem;
 }
 
 .navbar__img-redes {
   width: 100%;
+  filter: invert(100%);
 }
 
 /*Fin Navbar Sección Redes para Mobile*/
@@ -219,6 +220,7 @@ Inicio Estilo Footer
 
 .footer__img-redes {
   width: 100%;
+  filter: invert(100%);
 }
 
 /* Inicio Media Queries Footer */
@@ -233,6 +235,9 @@ Inicio Estilo Footer
   .footer__link-redes {
     width: 2rem;
   }
+  .footer__link-redes:hover {
+    filter: invert(40%);
+  }
 }
 
 /* Fin Media Queries Footer */
@@ -244,7 +249,7 @@ INICIO HOME
 ***************************************/
 /* Inicio Header */
 .mainHeader {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Multimedia/foto_santi1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Multimedia/foto_santi1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -320,11 +325,16 @@ INICIO HOME
 }
 
 .bio-introduccion__redes-link {
-  width: 2rem;
+  width: 2.5rem;
 }
 
 .bio-introduccion__redes-img {
   width: 100%;
+  filter: invert(100%);
+}
+
+.bio-introduccion__redes-img:hover {
+  filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg) brightness(80%) contrast(107%);
 }
 
 /* Fin Sección Bio */
@@ -665,6 +675,11 @@ INICIO MI BANDA
 
 .banda-introduccion__redes-img {
   width: 100%;
+  filter: invert(100%);
+}
+
+.banda-introduccion__redes-img:hover {
+  filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg) brightness(80%) contrast(107%);
 }
 
 /*Inicio Carousel*/

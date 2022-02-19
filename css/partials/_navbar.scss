@@ -31,7 +31,7 @@ Inicio Estilo Nav BS
   padding-right: 0;
 
   &-icon {
-    background-image: url(../Multimedia/menuHamburguesa.png);
+    background-image: url(../Multimedia/menuicon.svg);
     width: 1.75em;
     height: 2.25em;
   }
@@ -48,11 +48,12 @@ Inicio Estilo Nav BS
 }
 
 .navbar__link-redes {
-  width: 1.5rem;
+  width: 2.5rem;
 }
 
 .navbar__img-redes {
   width: 100%;
+  filter: invert(100%);
 }
 
 /*Fin Navbar Sección Redes para Mobile*/

@@ -5,7 +5,7 @@ INICIO HOME
 /* Inicio Header */
 
 .mainHeader {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../Multimedia/foto_santi1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,10 +76,16 @@ INICIO HOME
     margin: 3rem 0;
 
     &-link {
-      width: 2rem;
+      width: 2.5rem;
     }
     &-img {
       width: 100%;
+      //Img original en negro para que funcionen los filters. Invierto a blanco para visibilidad
+      filter: invert(100%);
+      &:hover {
+        filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg)
+          brightness(80%) contrast(107%);
+      }
     }
   }
 }

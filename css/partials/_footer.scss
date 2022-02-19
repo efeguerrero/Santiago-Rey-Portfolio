@@ -30,6 +30,7 @@ Inicio Estilo Footer
 
   &__img-redes {
     width: 100%;
+    filter: invert(100%);
   }
 }
 
@@ -46,6 +47,9 @@ Inicio Estilo Footer
 
     &__link-redes {
       width: 2rem;
+      &:hover {
+        filter: invert(40%);
+      }
     }
   }
 }
