@@ -6,76 +6,57 @@ INICIO TRABAJOS
 ****************************************
 */
 
-.section-trabajos__trabajo-individual {
-  margin: 3rem 0;
+.section-trabajos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1.5rem;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
 }
 
-.trabajo-individual {
-  background-color: rgb(34, 39, 37);
-  border-radius: 10px;
-  @include flexbox-column-display;
-  padding: 2rem 2rem;
-  gap: 1rem;
-
-  &__main-info {
-    @include flexbox-column-display($justify-content: space-between);
-    width: 100%;
-    gap: 1rem;
+.card {
+  &:hover {
+    filter: brightness(105%);
+    & .card-body {
+      background-color: rgba($color: $fondocontraste, $alpha: 0.6);
+    }
   }
 
-  &__descripcion {
-    text-align: center;
-    margin-bottom: 2rem;
+  &-body {
+    @include flexbox-column-display(
+      $align-items: center,
+      $justify-content: space-between
+    );
   }
 
-  &__titulo {
-    font-size: 2rem;
-    margin: 0 0;
-    margin-bottom: 2rem;
-    font-weight: 500;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: left;
+  &-title {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  &-text {
+    font-size: 0.8rem;
+    padding: 0.1rem;
   }
 
-  &__section-fotos {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  &__links {
+    margin-top: 1rem;
+    display: flex;
     justify-content: center;
-    grid-gap: 0.5rem;
-  }
-
-  &__foto {
-    width: 100%;
-  }
-}
-
-/* ************************************** 
-INICIO MEDIA QUERIES TRABAJOS
-************************************** */
-
-@media screen and (min-width: 1024px) {
-  .trabajo-individual {
-    &__main-info {
-      flex-direction: row;
+    gap: 1rem;
+    &-individual {
+      width: 1.5rem;
     }
-
-    &__player {
-      width: 40%;
-      margin-bottom: 2rem;
-    }
-
-    &__descripcion {
-      width: 60%;
-      text-align: Left;
+    &-img {
+      width: 100%;
+      filter: invert(100%);
+      &:hover {
+        filter: invert(40%);
+      }
     }
   }
 }
-
-/* ************************************** 
-FIN MEDIA QUERIES TRABAJOS
-************************************** */
 
 /* 
 ****************************************

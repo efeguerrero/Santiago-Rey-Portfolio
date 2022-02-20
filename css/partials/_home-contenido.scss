@@ -80,7 +80,7 @@ INICIO HOME
     }
     &-img {
       width: 100%;
-      //Img original en negro para que funcionen los filters. Invierto a blanco para visibilidad
+      //Img original en negro para que funcionen los filters que obtengo de la web (https://isotropic.co/tool/hex-color-to-css-filter/). Invierto a blanco para visibilidad fuera de la animación
       filter: invert(100%);
       &:hover {
         filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg)
@@ -102,8 +102,9 @@ INICIO HOME
   padding: 2rem 2rem;
   width: 100%;
   text-align: center;
-  background-color: $fondocontraste;
-  transition: all 0.5s;
+  background-color: rgba(29, 33, 32, 0.3);
+  border: 2px solid lighten($color: $fondocontraste, $amount: 10);
+  transition: all 0.4s;
   border-radius: 15px;
   @include flexbox-column-display(
     $align-items: center,
@@ -120,7 +121,7 @@ INICIO HOME
   }
 
   &:hover {
-    transform: scale(1.05);
+    background-color: rgba(29, 33, 32, 0.6);
   }
 
   &__texto {
@@ -228,7 +229,7 @@ INICIO MEDIA QUERIES HOME
   }
 
   .servicio-individual {
-    width: 33%;
+    width: 30%;
   }
   /* Fin Responsive section Servicios Home */
 
