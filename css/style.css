@@ -351,8 +351,9 @@ INICIO HOME
   padding: 2rem 2rem;
   width: 100%;
   text-align: center;
-  background-color: #1d2120;
-  transition: all 0.5s;
+  background-color: rgba(29, 33, 32, 0.3);
+  border: 2px solid #353c3a;
+  transition: all 0.4s;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -370,7 +371,7 @@ INICIO HOME
 }
 
 .servicio-individual:hover {
-  transform: scale(1.05);
+  background-color: rgba(29, 33, 32, 0.6);
 }
 
 .servicio-individual__texto {
@@ -467,7 +468,7 @@ INICIO MEDIA QUERIES HOME
     flex-direction: row;
   }
   .servicio-individual {
-    width: 33%;
+    width: 30%;
   }
   /* Fin Responsive section Servicios Home */
   /* Inicio Responsive section Musica Home */
