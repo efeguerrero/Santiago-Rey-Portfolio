@@ -18,14 +18,17 @@ INICIO TRABAJOS
 
 .card {
   &:hover {
-    filter: brightness(115%);
+    filter: brightness(105%);
+    & .card-body {
+      background-color: rgba($color: $fondocontraste, $alpha: 0.6);
+    }
   }
 
   &-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    @include flexbox-column-display(
+      $align-items: center,
+      $justify-content: space-between
+    );
   }
 
   &-title {
