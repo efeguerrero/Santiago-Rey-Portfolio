@@ -10,7 +10,7 @@ INICIO TRABAJOS
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-auto-rows: auto;
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -57,14 +57,6 @@ INICIO TRABAJOS
     }
   }
 }
-
-/* ************************************** 
-INICIO MEDIA QUERIES TRABAJOS
-************************************** */
-
-/*************************************** 
-FIN MEDIA QUERIES TRABAJOS
-************************************** */
 
 /* 
 ****************************************
