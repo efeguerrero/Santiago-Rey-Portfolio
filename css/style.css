@@ -491,15 +491,24 @@ INICIO TRABAJOS
 ****************************************
 */
 .section-trabajos {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
   justify-content: center;
-  align-items: center;
-  gap: 3rem;
+  align-content: center;
+  justify-items: center;
 }
 
 .card:hover {
-  filter: brightness(120%);
+  filter: brightness(110%);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card-title {
