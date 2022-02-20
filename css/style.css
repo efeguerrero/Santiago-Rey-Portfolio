@@ -501,7 +501,7 @@ INICIO TRABAJOS
 }
 
 .card:hover {
-  filter: brightness(110%);
+  filter: brightness(115%);
 }
 
 .card-body {
@@ -544,7 +544,7 @@ INICIO TRABAJOS
 /* ************************************** 
 INICIO MEDIA QUERIES TRABAJOS
 ************************************** */
-/* ************************************** 
+/*************************************** 
 FIN MEDIA QUERIES TRABAJOS
 ************************************** */
 /* 
