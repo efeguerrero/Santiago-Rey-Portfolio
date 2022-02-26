@@ -46,19 +46,47 @@ INICIO HOME
   &__bio-link {
     width: 3rem;
     margin-top: 6rem;
+    display: none;
   }
   &__link-icon {
     width: 100%;
+    animation: focus 1.5s infinite;
   }
 }
+
+/* Inicio Animación FOCUS*/
+@keyframes focus {
+  0% {
+    filter: opacity(1);
+  }
+  25% {
+    filter: opacity(0.8);
+  }
+  45% {
+    filter: opacity(0.7);
+    transform: translateY(-10px);
+  }
+  50% {
+    filter: opacity(0.5);
+  }
+  65% {
+    filter: opacity(0.7);
+  }
+
+  75% {
+    filter: opacity(0.8);
+  }
+  90% {
+    filter: opacity(0.9);
+  }
+}
+/* Fin Animación FOCUS*/
 
 /* Fin Banner */
 
 /* Inicio Sección Bio */
 
 .bio-introduccion {
-  padding-top: 3rem;
-
   &__descripcion {
     margin: 2rem 0;
     text-align: justify;
@@ -135,7 +163,7 @@ INICIO HOME
   }
 
   &__texto {
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -199,6 +227,9 @@ INICIO MEDIA QUERIES HOME
     &__texto {
       font-size: 1.3rem;
     }
+    &__bio-link {
+      display: block;
+    }
   }
   /* Fin Responsive Header */
 
@@ -210,6 +241,7 @@ INICIO MEDIA QUERIES HOME
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
+    padding-top: 3rem;
 
     &__img-container {
       width: 40%;
@@ -240,6 +272,9 @@ INICIO MEDIA QUERIES HOME
 
   .servicio-individual {
     width: 30%;
+    &__texto {
+      line-height: 2rem;
+    }
   }
   /* Fin Responsive section Servicios Home */
 
