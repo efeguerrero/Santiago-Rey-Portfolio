@@ -42,6 +42,14 @@ INICIO HOME
       display: none;
     }
   }
+
+  &__bio-link {
+    width: 3rem;
+    margin-top: 6rem;
+  }
+  &__link-icon {
+    width: 100%;
+  }
 }
 
 /* Fin Banner */
@@ -49,6 +57,8 @@ INICIO HOME
 /* Inicio Sección Bio */
 
 .bio-introduccion {
+  padding-top: 3rem;
+
   &__descripcion {
     margin: 2rem 0;
     text-align: justify;

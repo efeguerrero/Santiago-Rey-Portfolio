@@ -22,6 +22,7 @@ Inicio Estilo General
   font-size: 1rem;
   font-weight: 300;
   line-height: normal;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -291,8 +292,21 @@ INICIO HOME
   display: none;
 }
 
+.main-banner__bio-link {
+  width: 3rem;
+  margin-top: 6rem;
+}
+
+.main-banner__link-icon {
+  width: 100%;
+}
+
 /* Fin Banner */
 /* Inicio Sección Bio */
+.bio-introduccion {
+  padding-top: 3rem;
+}
+
 .bio-introduccion__descripcion {
   margin: 2rem 0;
   text-align: justify;
