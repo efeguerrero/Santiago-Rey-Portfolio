@@ -22,6 +22,7 @@ Inicio Estilo General
   font-size: 1rem;
   font-weight: 300;
   line-height: normal;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -291,6 +292,44 @@ INICIO HOME
   display: none;
 }
 
+.main-banner__bio-link {
+  width: 3rem;
+  margin-top: 6rem;
+  display: none;
+}
+
+.main-banner__link-icon {
+  width: 100%;
+  animation: focus 1.5s infinite;
+}
+
+/* Inicio Animación FOCUS*/
+@keyframes focus {
+  0% {
+    filter: opacity(1);
+  }
+  25% {
+    filter: opacity(0.8);
+  }
+  45% {
+    filter: opacity(0.7);
+    transform: translateY(-10px);
+  }
+  50% {
+    filter: opacity(0.5);
+  }
+  65% {
+    filter: opacity(0.7);
+  }
+  75% {
+    filter: opacity(0.8);
+  }
+  90% {
+    filter: opacity(0.9);
+  }
+}
+
+/* Fin Animación FOCUS*/
 /* Fin Banner */
 /* Inicio Sección Bio */
 .bio-introduccion__descripcion {
@@ -375,7 +414,7 @@ INICIO HOME
 }
 
 .servicio-individual__texto {
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 
 /* Fin de Formato Sección Servicios */
@@ -437,6 +476,9 @@ INICIO MEDIA QUERIES HOME
   .main-banner__texto {
     font-size: 1.3rem;
   }
+  .main-banner__bio-link {
+    display: block;
+  }
   /* Fin Responsive Header */
   /*Inicio Responsive bio*/
   .bio-introduccion {
@@ -445,6 +487,7 @@ INICIO MEDIA QUERIES HOME
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
+    padding-top: 3rem;
   }
   .bio-introduccion__img-container {
     width: 40%;
@@ -469,6 +512,9 @@ INICIO MEDIA QUERIES HOME
   }
   .servicio-individual {
     width: 30%;
+  }
+  .servicio-individual__texto {
+    line-height: 2rem;
   }
   /* Fin Responsive section Servicios Home */
   /* Inicio Responsive section Musica Home */
