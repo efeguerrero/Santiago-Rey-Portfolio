@@ -138,7 +138,7 @@ INICIO HOME
 
 .servicio-individual {
   padding: 2rem 2rem;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   background-color: rgba(29, 33, 32, 0.3);
   border: 2px solid lighten($color: $fondocontraste, $amount: 10);
@@ -153,7 +153,8 @@ INICIO HOME
   &__titulo {
     color: $texto;
     font-weight: 600;
-    margin: auto; /*para mantener titulos alineados entre tarjetas*/
+    margin-bottom: auto;
+    margin-top: auto; /*para mantener titulos alineados entre tarjetas*/
     text-transform: uppercase;
     letter-spacing: 0.2rem;
   }
@@ -215,6 +216,16 @@ INICIO MEDIA QUERIES HOME
   }
 
   /* Fin Responsive Header*/
+  /*Inicio Reposnive Servicios*/
+
+  .section-servicios {
+    align-items: center;
+  }
+
+  .servicio-individual {
+    max-width: 85%;
+  }
+  /*Fin Reposnive Servicios*/
 }
 
 @media screen and (min-width: 1024px) {
@@ -273,6 +284,7 @@ INICIO MEDIA QUERIES HOME
   /* Inicio Responsive section Servicios Home */
   .section-servicios {
     flex-direction: row;
+    align-items: stretch;
   }
 
   .servicio-individual {
