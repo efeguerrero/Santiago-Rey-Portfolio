@@ -404,7 +404,8 @@ INICIO HOME
 .servicio-individual__titulo {
   color: #efe9f4;
   font-weight: 600;
-  margin-bottom: 0;
+  margin: auto;
+  /*para mantener titulos alineados entre tarjetas*/
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
@@ -414,7 +415,13 @@ INICIO HOME
 }
 
 .servicio-individual__texto {
-  line-height: 1.5rem;
+  line-height: 1.3rem;
+  margin-top: 1rem;
+}
+
+.servicio-individual__container-texto-icono {
+  margin-top: auto;
+  /*para mantener texto+icono alineado entre tarjetas*/
 }
 
 /* Fin de Formato Sección Servicios */
@@ -514,7 +521,7 @@ INICIO MEDIA QUERIES HOME
     width: 30%;
   }
   .servicio-individual__texto {
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
   /* Fin Responsive section Servicios Home */
   /* Inicio Responsive section Musica Home */
