@@ -426,6 +426,60 @@ INICIO HOME
 }
 
 /* Fin de Formato Sección Servicios */
+/*Inicio Sección trabajos*/
+.section--trabajos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section--trabajos__galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 0.5rem;
+}
+
+.section--trabajos__img {
+  width: 100%;
+  transition: all 0.1s linear;
+}
+
+.section--trabajos__img--hidden {
+  display: none;
+}
+
+.section--trabajos__img:hover {
+  filter: contrast(70%) brightness(110%);
+  transition: all 0.1s linear;
+}
+
+.section--trabajos__link {
+  display: block;
+  margin-top: 2rem;
+  color: #efe9f4;
+  background-color: #ff3366;
+  border-radius: 10px;
+  border: #ff3366 1px solid;
+  padding: 0.8rem 3rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  transition: all 0.1s linear;
+}
+
+.section--trabajos__link:hover {
+  background-color: black;
+  border: white 1px solid;
+  color: #efe9f4;
+  transition: all 0.1s linear;
+}
+
+/*Fin Sección trabajos*/
 /* Inicio formato Sección Música */
 .section-musica {
   width: 100%;
@@ -476,6 +530,14 @@ INICIO MEDIA QUERIES HOME
     max-width: 85%;
   }
   /*Fin Reposnive Servicios*/
+  /*Inicio Responsive 768px galeria trabajos*/
+  .section--trabajos__galeria {
+    grid-template-columns: repeat(4, minmax(15%, 20%));
+  }
+  .section--trabajos__img--hidden {
+    display: block;
+  }
+  /*Fin Responsive 768px galeria trabajos*/
 }
 
 @media screen and (min-width: 1024px) {

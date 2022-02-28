@@ -175,6 +175,54 @@ INICIO HOME
 
 /* Fin de Formato Sección Servicios */
 
+/*Inicio Sección trabajos*/
+
+.section--trabajos {
+  @include flexbox-column-display($align-items: center);
+  &__galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 0.5rem;
+  }
+  &__img {
+    width: 100%;
+    transition: all 0.1s linear;
+    &--hidden {
+      display: none;
+    }
+    &:hover {
+      // transform: scale(1.2);
+      filter: contrast(70%) brightness(110%);
+      transition: all 0.1s linear;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-top: 2rem;
+    color: $texto;
+    background-color: $tituloprincipal;
+    border-radius: 10px;
+    border: $tituloprincipal 1px solid;
+    padding: 0.8rem 3rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    transition: all 0.1s linear;
+    &:hover {
+      background-color: black;
+      border: white 1px solid;
+      color: $texto;
+      transition: all 0.1s linear;
+    }
+  }
+}
+/*Fin Sección trabajos*/
+
 /* Inicio formato Sección Música */
 
 .section-musica {
@@ -226,8 +274,21 @@ INICIO MEDIA QUERIES HOME
     max-width: 85%;
   }
   /*Fin Reposnive Servicios*/
-}
 
+  /*Inicio Responsive 768px galeria trabajos*/
+
+  .section--trabajos {
+    &__galeria {
+      grid-template-columns: repeat(4, minmax(15%, 20%));
+    }
+    &__img {
+      &--hidden {
+        display: block;
+      }
+    }
+  }
+  /*Fin Responsive 768px galeria trabajos*/
+}
 @media screen and (min-width: 1024px) {
   /* Inicio Responsive Header*/
 
