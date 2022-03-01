@@ -1,13 +1,14 @@
 @charset "UTF-8";
 /**************************
- Inicio Variables Globales
+Inicio Variables Globales
 ***************************/
 /*Inicio Paleta de Colores*/
 /* Fin Paleta de Colores*/
 /* Inicio Fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600&display=swap");
 /* Fin Fuentes */
-/*Definición de Mixins*/
+/*Inicio Definición de Mixins*/
+/*Fin Definición de Mixins*/
 /**************************
 Fin Variables Globales
 ***************************/
@@ -30,7 +31,8 @@ body {
   color: #efe9f4;
 }
 
-.section-wrapper, .formContenedor {
+.section-wrapper,
+.formContenedor {
   margin: 5rem auto;
   width: 80vw;
   max-width: 1440px;
@@ -82,7 +84,7 @@ a:hover {
 Fin Estilo General
 *********************/
 /*********************
-Inicio Estilo Nav BS
+Inicio Estilo BS Nav Bar
  ********************/
 .navbar {
   max-width: 100vw;
@@ -124,7 +126,7 @@ Inicio Estilo Nav BS
   height: 2.25em;
 }
 
-/*Inicio Navbar Sección Redes para Mobile*/
+/*Inicio Redes BS Nav Bar Mobile*/
 .navbar__section-redes {
   display: flex;
   flex-direction: row;
@@ -142,8 +144,10 @@ Inicio Estilo Nav BS
   filter: invert(100%);
 }
 
-/*Fin Navbar Sección Redes para Mobile*/
-/* Inicio Media Queries Nav Bar */
+/*Fin Inicio Redes BS Nav Bar Mobile*/
+/* ************************************** 
+INICIO MEDIA QUERIES NAVBAR 
+************************************** */
 @media screen and (min-width: 768px) {
   .navbar,
   .navbar-nav {
@@ -183,9 +187,11 @@ Inicio Estilo Nav BS
   }
 }
 
-/* Fin Media Queries Nav Bar */
+/* ************************************** 
+FIN MEDIA QUERIES NAVBAR 
+************************************** */
 /*********************
-Fin Estilo Nav BS
+Fin Estilo BS Nav Bar
  ********************/
 /*********************
 Inicio Estilo Footer
@@ -224,7 +230,9 @@ Inicio Estilo Footer
   filter: invert(100%);
 }
 
-/* Inicio Media Queries Footer */
+/* ************************************** 
+INICIO MEDIA QUERIES FOOTER 
+************************************** */
 @media screen and (min-width: 1024px) {
   .footer {
     flex-direction: row;
@@ -241,7 +249,9 @@ Inicio Estilo Footer
   }
 }
 
-/* Fin Media Queries Footer */
+/* ************************************** 
+FIN MEDIA QUERIES FOOTER 
+************************************** */
 /*********************
 Fin Estilo Footer
 *********************/
@@ -250,7 +260,8 @@ INICIO HOME
 ***************************************/
 /* Inicio Header */
 .mainHeader {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Multimedia/foto_santi1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../Multimedia/foto_santi1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -373,7 +384,8 @@ INICIO HOME
 }
 
 .bio-introduccion__redes-img:hover {
-  filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg) brightness(80%) contrast(107%);
+  filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg)
+    brightness(80%) contrast(107%);
 }
 
 /* Fin Sección Bio */
@@ -612,7 +624,7 @@ FIN HOME
 /* 
 ****************************************
 ****************************************
-INICIO TRABAJOS
+INICIO ESTILO TRABAJOS
 **************************************** 
 ****************************************
 */
@@ -674,7 +686,7 @@ INICIO TRABAJOS
 /* 
 ****************************************
 ****************************************
-FIN TRABAJOS
+FIN ESTILO TRABAJOS
 **************************************** 
 ****************************************
 */
@@ -756,6 +768,7 @@ INICIO MI BANDA
 ****************************************
 **************************************** 
 */
+/*Inicio Sección Banda Introducción*/
 .banda-introduccion__descripcion {
   margin: 2rem 0;
   text-align: justify;
@@ -789,10 +802,12 @@ INICIO MI BANDA
 }
 
 .banda-introduccion__redes-img:hover {
-  filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg) brightness(80%) contrast(107%);
+  filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg)
+    brightness(80%) contrast(107%);
 }
 
-/*Inicio Carousel*/
+/*Fin Sección Banda Introducción*/
+/*Inicio Carousel Banda*/
 .banda-fotos {
   width: 80vw;
   margin: 2rem auto;
@@ -809,7 +824,7 @@ INICIO MI BANDA
   background-color: #efe9f4;
 }
 
-/*Fin Carousel*/
+/*Fin Carousel Banda*/
 /* ****************************************
 INICIO MEDIA QUERIES "MI BANDA"
 ****************************************  */
@@ -825,6 +840,7 @@ INICIO MEDIA QUERIES "MI BANDA"
 }
 
 @media screen and (min-width: 1024px) {
+  /*Inicio Responsive 1024px Banda Introducción*/
   .banda-introduccion {
     display: flex;
     flex-direction: row;
@@ -848,6 +864,7 @@ INICIO MEDIA QUERIES "MI BANDA"
     line-height: 1.5rem;
     margin: 0;
   }
+  /*Fin Responsive 1024px Banda Introducción*/
   .section-musica {
     flex-direction: row;
   }
@@ -908,7 +925,9 @@ INICIO CONTACTO
   margin-right: 1rem;
 }
 
-/* Inicio Media Queries Contacto */
+/* ************************************** 
+INICIO MEDIA QUERIES CONTACTO 
+************************************** */
 @media screen and (min-width: 768px) {
   .form-check-inline {
     display: inline-flex;
@@ -916,17 +935,24 @@ INICIO CONTACTO
   }
 }
 
+/* ************************************** 
+FIN MEDIA QUERIES CONTACTO 
+************************************** */
 /* 
 ****************************************
 FIN CONTACTO
 **************************************** 
 */
+/***************************************
+INICIO CUSTOM 404
+***************************************/
 .error-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Multimedia/foto_santi1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../Multimedia/foto_santi1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -953,4 +979,8 @@ FIN CONTACTO
   color: #efe9f4;
   font-weight: 600;
 }
+
+/***************************************
+FIN CUSTOM 404
+***************************************/
 /*# sourceMappingURL=style.css.map */

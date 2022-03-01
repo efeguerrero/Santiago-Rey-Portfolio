@@ -1,5 +1,5 @@
 /*********************
-Inicio Estilo Nav BS
+Inicio Estilo BS Nav Bar
  ********************/
 
 .navbar {
@@ -37,7 +37,7 @@ Inicio Estilo Nav BS
   }
 }
 
-/*Inicio Navbar Sección Redes para Mobile*/
+/*Inicio Redes BS Nav Bar Mobile*/
 .navbar__section-redes {
   @include flexbox-column-display(
     $flex-direction: row,
@@ -56,9 +56,11 @@ Inicio Estilo Nav BS
   filter: invert(100%);
 }
 
-/*Fin Navbar Sección Redes para Mobile*/
+/*Fin Inicio Redes BS Nav Bar Mobile*/
 
-/* Inicio Media Queries Nav Bar */
+/* ************************************** 
+INICIO MEDIA QUERIES NAVBAR 
+************************************** */
 
 @media screen and (min-width: 768px) {
   .navbar,
@@ -104,8 +106,10 @@ Inicio Estilo Nav BS
   }
 }
 
-/* Fin Media Queries Nav Bar */
+/* ************************************** 
+FIN MEDIA QUERIES NAVBAR 
+************************************** */
 
 /*********************
-Fin Estilo Nav BS
+Fin Estilo BS Nav Bar
  ********************/

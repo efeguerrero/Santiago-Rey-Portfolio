@@ -6,6 +6,8 @@ INICIO MI BANDA
 **************************************** 
 */
 
+/*Inicio Sección Banda Introducción*/
+
 .banda-introduccion {
   &__descripcion {
     margin: 2rem 0;
@@ -40,7 +42,9 @@ INICIO MI BANDA
   }
 }
 
-/*Inicio Carousel*/
+/*Fin Sección Banda Introducción*/
+
+/*Inicio Carousel Banda*/
 
 .banda-fotos {
   width: 80vw;
@@ -58,7 +62,7 @@ INICIO MI BANDA
   background-color: $texto;
 }
 
-/*Fin Carousel*/
+/*Fin Carousel Banda*/
 
 /* ****************************************
 INICIO MEDIA QUERIES "MI BANDA"
@@ -76,6 +80,7 @@ INICIO MEDIA QUERIES "MI BANDA"
 }
 
 @media screen and (min-width: 1024px) {
+  /*Inicio Responsive 1024px Banda Introducción*/
   .banda-introduccion {
     display: flex;
     flex-direction: row;
@@ -103,6 +108,8 @@ INICIO MEDIA QUERIES "MI BANDA"
       margin: 0;
     }
   }
+
+  /*Fin Responsive 1024px Banda Introducción*/
 
   .section-musica {
     flex-direction: row;

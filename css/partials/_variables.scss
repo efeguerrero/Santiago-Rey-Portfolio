@@ -1,5 +1,5 @@
 /**************************
- Inicio Variables Globales
+Inicio Variables Globales
 ***************************/
 
 /*Inicio Paleta de Colores*/
@@ -19,7 +19,7 @@ $fondocontraste: #1d2120;
 
 /* Fin Fuentes */
 
-/*Definición de Mixins*/
+/*Inicio Definición de Mixins*/
 
 @mixin flexbox-column-display(
   $flex-direction: column,
@@ -48,6 +48,8 @@ $fondocontraste: #1d2120;
     grid-row: 1/3;
   }
 }
+
+/*Fin Definición de Mixins*/
 
 /**************************
 Fin Variables Globales
