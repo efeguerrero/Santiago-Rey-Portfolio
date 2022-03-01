@@ -303,7 +303,7 @@ INICIO HOME
   animation: focus 1.5s infinite;
 }
 
-/* Inicio Animación FOCUS*/
+/* Inicio Animación Icono Chevron a Bio (focus)*/
 @keyframes focus {
   0% {
     filter: opacity(1);
@@ -329,7 +329,7 @@ INICIO HOME
   }
 }
 
-/* Fin Animación FOCUS*/
+/* Fin Animación Icono Chevron a Bio (focus)**/
 /* Fin Banner */
 /* Inicio Sección Bio */
 .bio-introduccion__descripcion {
