@@ -15,7 +15,7 @@ INICIO HOME
 
 /* Fin Header */
 
-/* Inicio Banner */
+/* Inicio Main Banner */
 
 .main-banner {
   @include flexbox-column-display($align-items: center);
@@ -54,7 +54,7 @@ INICIO HOME
   }
 }
 
-////*INICIO ANIMACIONES BANNER*////
+////*INICIO ANIMACIONES MAIN BANNER*////
 
 /* Inicio Animación Icono Chevron a Bio (focus)*/
 @keyframes focus {
@@ -86,7 +86,7 @@ INICIO HOME
 
 ////*FIN ANIMACIONES BANNER*////
 
-/* Fin Banner */
+/* Fin Main Banner */
 
 /* Inicio Sección Bio */
 
@@ -133,7 +133,7 @@ INICIO HOME
 }
 /* Fin Sección Bio */
 
-/* Inicio Formato Sección Servicios */
+/* Inicio Sección Servicios */
 
 .section-servicios {
   @include flexbox-column-display;
@@ -177,7 +177,7 @@ INICIO HOME
   }
 }
 
-/* Fin de Formato Sección Servicios */
+/* Fin de Sección Servicios */
 
 /*Inicio Sección trabajos*/
 
@@ -247,7 +247,7 @@ INICIO MEDIA QUERIES HOME
 ************************************** */
 
 @media screen and (min-width: 768px) {
-  /* Inicio Responsive Header*/
+  /* Inicio Responsive 768px Header y Main Banner*/
   .main-banner {
     height: 50vh;
 
@@ -267,8 +267,8 @@ INICIO MEDIA QUERIES HOME
     padding-top: 0rem;
   }
 
-  /* Fin Responsive Header*/
-  /*Inicio Reposnive Servicios*/
+  /* Fin Responsive 768px Header y Main Banner*/
+  /*Inicio Reposnive 768px Sección Servicios*/
 
   .section-servicios {
     align-items: center;
@@ -277,9 +277,9 @@ INICIO MEDIA QUERIES HOME
   .servicio-individual {
     max-width: 85%;
   }
-  /*Fin Reposnive Servicios*/
+  /*Fin Reposnive 768px Sección Servicios*/
 
-  /*Inicio Responsive 768px galeria trabajos*/
+  /*Inicio Responsive 768px Sección Trabajos*/
 
   .section--trabajos {
     &__galeria {
@@ -291,10 +291,10 @@ INICIO MEDIA QUERIES HOME
       }
     }
   }
-  /*Fin Responsive 768px galeria trabajos*/
+  /*Fin Responsive 768px Sección Trabajos*/
 }
 @media screen and (min-width: 1024px) {
-  /* Inicio Responsive Header*/
+  /* Inicio Responsive 1024px Header y Main Banner*/
 
   .mainHeader {
     background-attachment: fixed;
@@ -312,9 +312,9 @@ INICIO MEDIA QUERIES HOME
       display: block;
     }
   }
-  /* Fin Responsive Header */
+  /* Fin Responsive 1024px Header y Main Banner */
 
-  /*Inicio Responsive bio*/
+  /*Inicio Responsive 1024px Sección Bio*/
 
   .bio-introduccion {
     display: flex;
@@ -344,9 +344,9 @@ INICIO MEDIA QUERIES HOME
       margin: 0;
     }
   }
-  /*Fin Responsive Bio*/
+  /*Fin Responsive 1024px Sección Bio*/
 
-  /* Inicio Responsive section Servicios Home */
+  /* Inicio Responsive 1024px Sección Servicios */
   .section-servicios {
     flex-direction: row;
     align-items: stretch;
@@ -358,15 +358,15 @@ INICIO MEDIA QUERIES HOME
       line-height: 1.5rem;
     }
   }
-  /* Fin Responsive section Servicios Home */
+  /*Fin Responsive 1024px Sección Servicios */
 
-  /* Inicio Responsive section Musica Home */
+  /* Inicio Responsive 1024px Sección Musica */
 
   .section-musica__reproductores {
     flex-direction: row;
   }
 
-  /* Fin Responsive section Musica Home */
+  /* Fin Responsive 1024px Sección Musica */
 }
 /* ************************************** 
 FIN MEDIA QUERIES HOME
