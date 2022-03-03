@@ -18,6 +18,7 @@ Inicio Estilo General
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
   font-size: 1rem;
@@ -94,9 +95,17 @@ Inicio Estilo BS Nav Bar
 }
 
 .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   background-color: black;
   height: calc(100vh - 3.125rem);
@@ -107,6 +116,7 @@ Inicio Estilo BS Nav Bar
   margin: 0.5rem 0;
   font-size: 1rem;
   font-weight: 500;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-bottom: transparent 1px solid;
   text-transform: uppercase;
@@ -128,9 +138,18 @@ Inicio Estilo BS Nav Bar
 
 /*Inicio Redes BS Nav Bar Mobile*/
 .navbar__section-redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 1.5rem;
 }
@@ -141,6 +160,7 @@ Inicio Estilo BS Nav Bar
 
 .navbar__img-redes {
   width: 100%;
+  -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
@@ -167,6 +187,8 @@ INICIO MEDIA QUERIES NAVBAR
     border-bottom: white 1px solid;
   }
   .navbar-nav__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .fixed-top {
@@ -199,9 +221,18 @@ Inicio Estilo Footer
 .footer {
   background-color: #1d2120;
   padding: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 1.5rem;
 }
@@ -212,9 +243,18 @@ Inicio Estilo Footer
 }
 
 .footer__section-redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   gap: 2rem;
@@ -227,6 +267,7 @@ Inicio Estilo Footer
 
 .footer__img-redes {
   width: 100%;
+  -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
@@ -235,6 +276,9 @@ INICIO MEDIA QUERIES FOOTER
 ************************************** */
 @media screen and (min-width: 1024px) {
   .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
   .footer__section-redes {
@@ -245,6 +289,7 @@ INICIO MEDIA QUERIES FOOTER
     width: 2rem;
   }
   .footer__link-redes:hover {
+    -webkit-filter: invert(40%);
     filter: invert(40%);
   }
 }
@@ -260,6 +305,14 @@ INICIO HOME
 ***************************************/
 /* Inicio Header */
 .mainHeader {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.6)),
+      to(rgba(0, 0, 0, 0.6))
+    ),
+    url(../Multimedia/foto_santi1.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../Multimedia/foto_santi1.jpg);
   background-repeat: no-repeat;
@@ -271,9 +324,18 @@ INICIO HOME
 /* Fin Header */
 /* Inicio Main Banner */
 .main-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -292,9 +354,18 @@ INICIO HOME
 }
 
 .main-banner__texto-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-bottom: 2rem;
 }
@@ -311,31 +382,72 @@ INICIO HOME
 
 .main-banner__link-icon {
   width: 100%;
+  -webkit-animation: focus 1.5s infinite;
   animation: focus 1.5s infinite;
 }
 
 /* Inicio Animación Icono Chevron a Bio (focus)*/
-@keyframes focus {
+@-webkit-keyframes focus {
   0% {
+    -webkit-filter: opacity(1);
     filter: opacity(1);
   }
   25% {
+    -webkit-filter: opacity(0.8);
     filter: opacity(0.8);
   }
   45% {
+    -webkit-filter: opacity(0.7);
     filter: opacity(0.7);
+    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
   50% {
+    -webkit-filter: opacity(0.5);
     filter: opacity(0.5);
   }
   65% {
+    -webkit-filter: opacity(0.7);
     filter: opacity(0.7);
   }
   75% {
+    -webkit-filter: opacity(0.8);
     filter: opacity(0.8);
   }
   90% {
+    -webkit-filter: opacity(0.9);
+    filter: opacity(0.9);
+  }
+}
+@keyframes focus {
+  0% {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+  }
+  25% {
+    -webkit-filter: opacity(0.8);
+    filter: opacity(0.8);
+  }
+  45% {
+    -webkit-filter: opacity(0.7);
+    filter: opacity(0.7);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  50% {
+    -webkit-filter: opacity(0.5);
+    filter: opacity(0.5);
+  }
+  65% {
+    -webkit-filter: opacity(0.7);
+    filter: opacity(0.7);
+  }
+  75% {
+    -webkit-filter: opacity(0.8);
+    filter: opacity(0.8);
+  }
+  90% {
+    -webkit-filter: opacity(0.9);
     filter: opacity(0.9);
   }
 }
@@ -366,9 +478,18 @@ INICIO HOME
 }
 
 .bio-introduccion__redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 2rem;
   margin: 3rem 0;
@@ -380,10 +501,13 @@ INICIO HOME
 
 .bio-introduccion__redes-img {
   width: 100%;
+  -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
 .bio-introduccion__redes-img:hover {
+  -webkit-filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg)
+    brightness(80%) contrast(107%);
   filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg)
     brightness(80%) contrast(107%);
 }
@@ -391,9 +515,18 @@ INICIO HOME
 /* Fin Sección Bio */
 /* Inicio Sección Servicios */
 .section-servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   gap: 1rem;
 }
@@ -404,11 +537,20 @@ INICIO HOME
   text-align: center;
   background-color: rgba(29, 33, 32, 0.3);
   border: 2px solid #353c3a;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 1rem;
 }
@@ -440,15 +582,28 @@ INICIO HOME
 /* Fin de Sección Servicios */
 /*Inicio Sección trabajos*/
 .section--trabajos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .section--trabajos__galeria {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (minmax(45%, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   justify-items: center;
   grid-gap: 0.5rem;
@@ -456,6 +611,7 @@ INICIO HOME
 
 .section--trabajos__img {
   width: 100%;
+  -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
 
@@ -464,7 +620,9 @@ INICIO HOME
 }
 
 .section--trabajos__img:hover {
+  -webkit-filter: contrast(70%) brightness(110%);
   filter: contrast(70%) brightness(110%);
+  -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
 
@@ -481,6 +639,7 @@ INICIO HOME
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+  -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
 
@@ -488,6 +647,7 @@ INICIO HOME
   background-color: black;
   border: white 1px solid;
   color: #efe9f4;
+  -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
 
@@ -495,16 +655,34 @@ INICIO HOME
 /* Inicio formato Sección Música */
 .section-musica {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
 }
 
 .section-musica__reproductores {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 2rem;
   width: 100%;
@@ -520,9 +698,18 @@ INICIO MEDIA QUERIES HOME
     height: 50vh;
   }
   .main-banner__texto-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
     align-items: stretch;
     padding-bottom: 2rem;
   }
@@ -536,6 +723,8 @@ INICIO MEDIA QUERIES HOME
   /* Fin Responsive 768px Header y Main Banner*/
   /*Inicio Reposnive 768px Sección Servicios*/
   .section-servicios {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .servicio-individual {
@@ -544,6 +733,7 @@ INICIO MEDIA QUERIES HOME
   /*Fin Reposnive 768px Sección Servicios*/
   /*Inicio Responsive 768px Sección Trabajos*/
   .section--trabajos__galeria {
+    -ms-grid-columns: (minmax(15%, 20%)) [4];
     grid-template-columns: repeat(4, minmax(15%, 20%));
   }
   .section--trabajos__img--hidden {
@@ -572,9 +762,18 @@ INICIO MEDIA QUERIES HOME
   /* Fin Responsive 1024px Header y Main Banner */
   /*Inicio Responsive 1024px Sección Bio*/
   .bio-introduccion {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     gap: 2rem;
     padding-top: 3rem;
@@ -584,9 +783,13 @@ INICIO MEDIA QUERIES HOME
   }
   .bio-introduccion__img {
     width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
   .bio-introduccion__info {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
     width: 60%;
   }
@@ -598,7 +801,12 @@ INICIO MEDIA QUERIES HOME
   /*Fin Responsive 1024px Sección Bio*/
   /* Inicio Responsive 1024px Sección Servicios */
   .section-servicios {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
     align-items: stretch;
   }
   .servicio-individual {
@@ -610,6 +818,9 @@ INICIO MEDIA QUERIES HOME
   /*Fin Responsive 1024px Sección Servicios */
   /* Inicio Responsive 1024px Sección Musica */
   .section-musica__reproductores {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
   /* Fin Responsive 1024px Sección Musica */
@@ -629,16 +840,22 @@ INICIO ESTILO TRABAJOS
 ****************************************
 */
 .section-trabajos {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (minmax(18rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-auto-rows: auto;
   grid-gap: 1.5rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-line-pack: center;
   align-content: center;
   justify-items: center;
 }
 
 .card:hover {
+  -webkit-filter: brightness(105%);
   filter: brightness(105%);
 }
 
@@ -647,9 +864,18 @@ INICIO ESTILO TRABAJOS
 }
 
 .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -665,7 +891,11 @@ INICIO ESTILO TRABAJOS
 
 .card__links {
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 1rem;
 }
@@ -676,10 +906,12 @@ INICIO ESTILO TRABAJOS
 
 .card__links-img {
   width: 100%;
+  -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
 .card__links-img:hover {
+  -webkit-filter: invert(40%);
   filter: invert(40%);
 }
 
@@ -698,9 +930,18 @@ INICIO GALERIA
 **************************************** 
 */
 .galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   gap: 1rem;
 }
@@ -714,23 +955,35 @@ INICIO MEDIA QUERIES GALERIA
 ************************************** */
 @media screen and (min-width: 768px) {
   .galeria {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
   .galeria__img {
     width: calc(50% - 1rem);
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
   .galeria__img:hover {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .galeria {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr) [5];
     grid-template-columns: repeat(5, 1fr);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     grid-gap: 1rem;
   }
@@ -738,15 +991,27 @@ INICIO MEDIA QUERIES GALERIA
     width: 100%;
   }
   .galeria__img--destacada1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     grid-row: 1/3;
   }
   .galeria__img--destacada2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-column: 2/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
     grid-row: 3/5;
   }
   .galeria__img--destacada3 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
     grid-column: 4/6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     grid-row: 1/3;
   }
 }
@@ -784,9 +1049,18 @@ INICIO MI BANDA
 }
 
 .banda-introduccion__redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 2rem;
   margin: 3rem 0;
@@ -798,10 +1072,13 @@ INICIO MI BANDA
 
 .banda-introduccion__redes-img {
   width: 100%;
+  -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
 .banda-introduccion__redes-img:hover {
+  -webkit-filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg)
+    brightness(80%) contrast(107%);
   filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg)
     brightness(80%) contrast(107%);
 }
@@ -842,9 +1119,18 @@ INICIO MEDIA QUERIES "MI BANDA"
 @media screen and (min-width: 1024px) {
   /*Inicio Responsive 1024px Banda Introducción*/
   .banda-introduccion {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     gap: 2rem;
   }
@@ -853,9 +1139,13 @@ INICIO MEDIA QUERIES "MI BANDA"
   }
   .banda-introduccion__img {
     width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
   .banda-introduccion__info {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
     width: 75%;
   }
@@ -866,6 +1156,9 @@ INICIO MEDIA QUERIES "MI BANDA"
   }
   /*Fin Responsive 1024px Banda Introducción*/
   .section-musica {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
   .banda-fotos {
@@ -892,16 +1185,34 @@ INICIO CONTACTO
 */
 .formContenedor {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .form-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   gap: 1.5rem;
 }
@@ -930,6 +1241,8 @@ INICIO MEDIA QUERIES CONTACTO
 ************************************** */
 @media screen and (min-width: 768px) {
   .form-check-inline {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     margin-bottom: 0;
   }
@@ -947,10 +1260,27 @@ FIN CONTACTO
 INICIO CUSTOM 404
 ***************************************/
 .error-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(../Multimedia/foto_santi1.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../Multimedia/foto_santi1.jpg);
   background-repeat: no-repeat;
