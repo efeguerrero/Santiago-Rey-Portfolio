@@ -93,7 +93,7 @@ INICIO HOME
 .bio-introduccion {
   &__descripcion {
     margin: 2rem 0;
-    text-align: justify;
+    text-align: center;
     line-height: 1.4rem;
   }
 
@@ -157,8 +157,6 @@ INICIO HOME
   &__titulo {
     color: $texto;
     font-weight: 600;
-    // margin-bottom: auto;
-    // margin-top: auto; /*para mantener titulos alineados entre tarjetas*/
     text-transform: uppercase;
     letter-spacing: 0.2rem;
   }

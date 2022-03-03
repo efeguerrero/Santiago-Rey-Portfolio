@@ -448,7 +448,7 @@ INICIO HOME
 /* Inicio Sección Bio */
 .bio-introduccion__descripcion {
   margin: 2rem 0;
-  text-align: justify;
+  text-align: center;
   line-height: 1.4rem;
 }
 
@@ -1023,7 +1023,7 @@ INICIO MI BANDA
 /*Inicio Sección Banda Introducción*/
 .banda-introduccion__descripcion {
   margin: 2rem 0;
-  text-align: justify;
+  text-align: center;
   line-height: 1.4rem;
 }
 
