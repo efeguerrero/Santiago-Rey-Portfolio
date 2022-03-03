@@ -150,15 +150,15 @@ INICIO HOME
   border-radius: 15px;
   @include flexbox-column-display(
     $align-items: center,
-    $justify-content: space-around
+    $justify-content: space-between
   );
   gap: 1rem;
 
   &__titulo {
     color: $texto;
     font-weight: 600;
-    margin-bottom: auto;
-    margin-top: auto; /*para mantener titulos alineados entre tarjetas*/
+    // margin-bottom: auto;
+    // margin-top: auto; /*para mantener titulos alineados entre tarjetas*/
     text-transform: uppercase;
     letter-spacing: 0.2rem;
   }
@@ -173,7 +173,7 @@ INICIO HOME
   }
 
   &__container-texto-icono {
-    margin-top: auto; /*para mantener texto+icono alineado entre tarjetas*/
+    margin-bottom: auto; /*para mantener texto+icono alineado entre tarjetas*/
   }
 }
 

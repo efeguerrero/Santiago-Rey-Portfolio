@@ -19,7 +19,7 @@ Inicio Estilo General
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Spartan", sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -32,8 +32,7 @@ body {
   color: #efe9f4;
 }
 
-.section-wrapper,
-.formContenedor {
+.section-wrapper, .formContenedor {
   margin: 5rem auto;
   width: 80vw;
   max-width: 1440px;
@@ -84,9 +83,9 @@ a:hover {
 /*********************
 Fin Estilo General
 *********************/
-/*********************
+/**********************
 Inicio Estilo BS Nav Bar
- ********************/
+ **********************/
 .navbar {
   max-width: 100vw;
   margin: 0 auto;
@@ -100,13 +99,13 @@ Inicio Estilo BS Nav Bar
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   background-color: black;
   height: calc(100vh - 3.125rem);
 }
@@ -143,14 +142,14 @@ Inicio Estilo BS Nav Bar
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1.5rem;
 }
 
@@ -161,13 +160,13 @@ Inicio Estilo BS Nav Bar
 .navbar__img-redes {
   width: 100%;
   -webkit-filter: invert(100%);
-  filter: invert(100%);
+          filter: invert(100%);
 }
 
 /*Fin Inicio Redes BS Nav Bar Mobile*/
 /* ************************************** 
 INICIO MEDIA QUERIES NAVBAR 
-************************************** */
+**************************************** */
 @media screen and (min-width: 768px) {
   .navbar,
   .navbar-nav {
@@ -226,14 +225,14 @@ Inicio Estilo Footer
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1.5rem;
 }
 
@@ -248,14 +247,14 @@ Inicio Estilo Footer
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   gap: 2rem;
   max-width: 670px;
@@ -268,7 +267,7 @@ Inicio Estilo Footer
 .footer__img-redes {
   width: 100%;
   -webkit-filter: invert(100%);
-  filter: invert(100%);
+          filter: invert(100%);
 }
 
 /* ************************************** 
@@ -278,8 +277,8 @@ INICIO MEDIA QUERIES FOOTER
   .footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .footer__section-redes {
     width: 30%;
@@ -290,7 +289,7 @@ INICIO MEDIA QUERIES FOOTER
   }
   .footer__link-redes:hover {
     -webkit-filter: invert(40%);
-    filter: invert(40%);
+            filter: invert(40%);
   }
 }
 
@@ -305,16 +304,8 @@ INICIO HOME
 ***************************************/
 /* Inicio Header */
 .mainHeader {
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.6)),
-      to(rgba(0, 0, 0, 0.6))
-    ),
-    url(../Multimedia/foto_santi1.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../Multimedia/foto_santi1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../Multimedia/foto_santi1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Multimedia/foto_santi1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -329,14 +320,14 @@ INICIO HOME
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-banner__title {
@@ -359,14 +350,14 @@ INICIO HOME
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 2rem;
 }
 
@@ -383,72 +374,72 @@ INICIO HOME
 .main-banner__link-icon {
   width: 100%;
   -webkit-animation: focus 1.5s infinite;
-  animation: focus 1.5s infinite;
+          animation: focus 1.5s infinite;
 }
 
 /* Inicio Animación Icono Chevron a Bio (focus)*/
 @-webkit-keyframes focus {
   0% {
     -webkit-filter: opacity(1);
-    filter: opacity(1);
+            filter: opacity(1);
   }
   25% {
     -webkit-filter: opacity(0.8);
-    filter: opacity(0.8);
+            filter: opacity(0.8);
   }
   45% {
     -webkit-filter: opacity(0.7);
-    filter: opacity(0.7);
+            filter: opacity(0.7);
     -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   50% {
     -webkit-filter: opacity(0.5);
-    filter: opacity(0.5);
+            filter: opacity(0.5);
   }
   65% {
     -webkit-filter: opacity(0.7);
-    filter: opacity(0.7);
+            filter: opacity(0.7);
   }
   75% {
     -webkit-filter: opacity(0.8);
-    filter: opacity(0.8);
+            filter: opacity(0.8);
   }
   90% {
     -webkit-filter: opacity(0.9);
-    filter: opacity(0.9);
+            filter: opacity(0.9);
   }
 }
 @keyframes focus {
   0% {
     -webkit-filter: opacity(1);
-    filter: opacity(1);
+            filter: opacity(1);
   }
   25% {
     -webkit-filter: opacity(0.8);
-    filter: opacity(0.8);
+            filter: opacity(0.8);
   }
   45% {
     -webkit-filter: opacity(0.7);
-    filter: opacity(0.7);
+            filter: opacity(0.7);
     -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   50% {
     -webkit-filter: opacity(0.5);
-    filter: opacity(0.5);
+            filter: opacity(0.5);
   }
   65% {
     -webkit-filter: opacity(0.7);
-    filter: opacity(0.7);
+            filter: opacity(0.7);
   }
   75% {
     -webkit-filter: opacity(0.8);
-    filter: opacity(0.8);
+            filter: opacity(0.8);
   }
   90% {
     -webkit-filter: opacity(0.9);
-    filter: opacity(0.9);
+            filter: opacity(0.9);
   }
 }
 
@@ -483,14 +474,14 @@ INICIO HOME
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 2rem;
   margin: 3rem 0;
 }
@@ -502,14 +493,12 @@ INICIO HOME
 .bio-introduccion__redes-img {
   width: 100%;
   -webkit-filter: invert(100%);
-  filter: invert(100%);
+          filter: invert(100%);
 }
 
 .bio-introduccion__redes-img:hover {
-  -webkit-filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg)
-    brightness(80%) contrast(107%);
-  filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg)
-    brightness(80%) contrast(107%);
+  -webkit-filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg) brightness(80%) contrast(107%);
+          filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg) brightness(80%) contrast(107%);
 }
 
 /* Fin Sección Bio */
@@ -520,14 +509,14 @@ INICIO HOME
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   gap: 1rem;
 }
 
@@ -545,22 +534,20 @@ INICIO HOME
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
 }
 
 .servicio-individual__titulo {
   color: #efe9f4;
   font-weight: 600;
-  margin-bottom: auto;
-  margin-top: auto;
-  /*para mantener titulos alineados entre tarjetas*/
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
@@ -575,7 +562,7 @@ INICIO HOME
 }
 
 .servicio-individual__container-texto-icono {
-  margin-top: auto;
+  margin-bottom: auto;
   /*para mantener texto+icono alineado entre tarjetas*/
 }
 
@@ -587,24 +574,24 @@ INICIO HOME
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section--trabajos__galeria {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(45%, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  -ms-grid-columns: (minmax(45%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   justify-items: center;
   grid-gap: 0.5rem;
 }
@@ -621,7 +608,7 @@ INICIO HOME
 
 .section--trabajos__img:hover {
   -webkit-filter: contrast(70%) brightness(110%);
-  filter: contrast(70%) brightness(110%);
+          filter: contrast(70%) brightness(110%);
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
@@ -660,14 +647,14 @@ INICIO HOME
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .section-musica__reproductores {
@@ -676,14 +663,14 @@ INICIO HOME
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 2rem;
   width: 100%;
 }
@@ -703,14 +690,14 @@ INICIO MEDIA QUERIES HOME
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     padding-bottom: 2rem;
   }
   .main-banner__texto-separador {
@@ -724,8 +711,8 @@ INICIO MEDIA QUERIES HOME
   /*Inicio Reposnive 768px Sección Servicios*/
   .section-servicios {
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .servicio-individual {
     max-width: 85%;
@@ -733,8 +720,8 @@ INICIO MEDIA QUERIES HOME
   /*Fin Reposnive 768px Sección Servicios*/
   /*Inicio Responsive 768px Sección Trabajos*/
   .section--trabajos__galeria {
-    -ms-grid-columns: (minmax(15%, 20%)) [4];
-    grid-template-columns: repeat(4, minmax(15%, 20%));
+    -ms-grid-columns: (minmax(15%, 20%))[4];
+        grid-template-columns: repeat(4, minmax(15%, 20%));
   }
   .section--trabajos__img--hidden {
     display: block;
@@ -767,14 +754,14 @@ INICIO MEDIA QUERIES HOME
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 2rem;
     padding-top: 3rem;
   }
@@ -784,13 +771,13 @@ INICIO MEDIA QUERIES HOME
   .bio-introduccion__img {
     width: 100%;
     -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .bio-introduccion__info {
     -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
+        -ms-flex-order: 2;
+            order: 2;
     width: 60%;
   }
   .bio-introduccion__descripcion {
@@ -803,11 +790,11 @@ INICIO MEDIA QUERIES HOME
   .section-servicios {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
   .servicio-individual {
     width: 30%;
@@ -820,8 +807,8 @@ INICIO MEDIA QUERIES HOME
   .section-musica__reproductores {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   /* Fin Responsive 1024px Sección Musica */
 }
@@ -842,21 +829,21 @@ INICIO ESTILO TRABAJOS
 .section-trabajos {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(18rem, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  -ms-grid-columns: (minmax(18rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-auto-rows: auto;
   grid-gap: 1.5rem;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   justify-items: center;
 }
 
 .card:hover {
   -webkit-filter: brightness(105%);
-  filter: brightness(105%);
+          filter: brightness(105%);
 }
 
 .card:hover .card-body {
@@ -869,14 +856,14 @@ INICIO ESTILO TRABAJOS
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card-title {
@@ -895,8 +882,8 @@ INICIO ESTILO TRABAJOS
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1rem;
 }
 
@@ -907,12 +894,12 @@ INICIO ESTILO TRABAJOS
 .card__links-img {
   width: 100%;
   -webkit-filter: invert(100%);
-  filter: invert(100%);
+          filter: invert(100%);
 }
 
 .card__links-img:hover {
   -webkit-filter: invert(40%);
-  filter: invert(40%);
+          filter: invert(40%);
 }
 
 /* 
@@ -935,14 +922,14 @@ INICIO GALERIA
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   gap: 1rem;
 }
 
@@ -957,13 +944,13 @@ INICIO MEDIA QUERIES GALERIA
   .galeria {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .galeria__img {
     width: calc(50% - 1rem);
@@ -972,7 +959,7 @@ INICIO MEDIA QUERIES GALERIA
   }
   .galeria__img:hover {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
@@ -980,11 +967,11 @@ INICIO MEDIA QUERIES GALERIA
   .galeria {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [5];
-    grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-gap: 1rem;
   }
   .galeria__img {
@@ -1054,14 +1041,14 @@ INICIO MI BANDA
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 2rem;
   margin: 3rem 0;
 }
@@ -1073,14 +1060,12 @@ INICIO MI BANDA
 .banda-introduccion__redes-img {
   width: 100%;
   -webkit-filter: invert(100%);
-  filter: invert(100%);
+          filter: invert(100%);
 }
 
 .banda-introduccion__redes-img:hover {
-  -webkit-filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg)
-    brightness(80%) contrast(107%);
-  filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg)
-    brightness(80%) contrast(107%);
+  -webkit-filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg) brightness(80%) contrast(107%);
+          filter: invert(36%) sepia(96%) saturate(3098%) hue-rotate(325deg) brightness(80%) contrast(107%);
 }
 
 /*Fin Sección Banda Introducción*/
@@ -1124,14 +1109,14 @@ INICIO MEDIA QUERIES "MI BANDA"
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 2rem;
   }
   .banda-introduccion__img-container {
@@ -1140,13 +1125,13 @@ INICIO MEDIA QUERIES "MI BANDA"
   .banda-introduccion__img {
     width: 100%;
     -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .banda-introduccion__info {
     -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
+        -ms-flex-order: 2;
+            order: 2;
     width: 75%;
   }
   .banda-introduccion__descripcion {
@@ -1158,8 +1143,8 @@ INICIO MEDIA QUERIES "MI BANDA"
   .section-musica {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .banda-fotos {
     width: 50vw;
@@ -1190,14 +1175,14 @@ INICIO CONTACTO
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form-contacto {
@@ -1206,14 +1191,14 @@ INICIO CONTACTO
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   gap: 1.5rem;
 }
 
@@ -1265,24 +1250,16 @@ INICIO CUSTOM 404
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.7)),
-      to(rgba(0, 0, 0, 0.7))
-    ),
-    url(../Multimedia/foto_santi1.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../Multimedia/foto_santi1.jpg);
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../Multimedia/foto_santi1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Multimedia/foto_santi1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
